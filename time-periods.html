@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Periods</title>
+<style>
+@font-face {
+  font-family: 'Golden Ratio';
+  src: url('GoldenRatio-Demo.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  font-family: 'Golden Ratio', serif;
+  color: white;
+  padding: 80px 40px;
+  overflow-y: scroll;
+}
+#bg-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.breadcrumb {
+  margin-bottom: 20px;
+  mix-blend-mode: exclusion;
+  font-size: 18px;
+}
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+h2, p {
+  margin-bottom: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.7);
+}
+.image-container img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.image-container:hover .overlay {
+  opacity: 1;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.5);
+}
+</style>
+</head>
+<body>
+<video autoplay muted loop playsinline id="bg-video">
+  <source src="BACKGROUND.mp4" type="video/mp4">
+</video>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a> / Time Periods
+</div>
+
+<div class="content">
+  <h2>Renaissance to Romanticism</h2>
+  <p>1400–1800 | A period of rebirth in art, architecture, and humanism, blending mathematical proportion with profound beauty.</p>
+  <div class="grid">
+    <!-- image items here -->
+    <div class="image-container"><a href="the-last-supper.html"><img src="the-last-supper.jpg"><div class="overlay">The Last Supper</div></a></div>
+    <div class="image-container"><a href="mona-lisa.html"><img src="mona-lisa.jpg"><div class="overlay">Mona Lisa</div></a></div>
+    <div class="image-container"><a href="creation-of-adam.html"><img src="creation-of-adam.jpg"><div class="overlay">The Creation of Adam</div></a></div>
+    <div class="image-container"><a href="school-of-athens.html"><img src="school-of-athens.jpg"><div class="overlay">The School of Athens</div></a></div>
+    <div class="image-container"><a href="birth-of-venus.html"><img src="birth-of-venus.jpg"><div class="overlay">The Birth of Venus</div></a></div>
+    <div class="image-container"><a href="girl-with-pearl-earring.html"><img src="girl-with-pearl-earring.jpg"><div class="overlay">Girl with a Pearl Earring</div></a></div>
+    <div class="image-container"><a href="night-watch.html"><img src="night-watch.jpg"><div class="overlay">The Night Watch</div></a></div>
+    <div class="image-container"><a href="great-wave.html"><img src="great-wave.jpg"><div class="overlay">The Great Wave off Kanagawa</div></a></div>
+  </div>
+
+  <h2>Impressionism to Early Modernism</h2>
+  <p>1800–1945 | A revolutionary period embracing light, color, abstraction, and personal expression guided by hidden mathematical beauty.</p>
+  <div class="grid">
+    <!-- image items here -->
+    <div class="image-container"><a href="la-grande-jatte.html"><img src="la-grande-jatte.jpg"><div class="overlay">A Sunday Afternoon on the Island of La Grande Jatte</div></a></div>
+    <div class="image-container"><a href="starry-night.html"><img src="starry-night.jpg"><div class="overlay">Starry Night</div></a></div>
+    <div class="image-container"><a href="persistence-of-memory.html"><img src="persistence-of-memory.jpg"><div class="overlay">The Persistence of Memory</div></a></div>
+    <div class="image-container"><a href="sacrament-of-last-supper.html"><img src="sacrament-of-last-supper.jpg"><div class="overlay">The Sacrament of the Last Supper</div></a></div>
+    <div class="image-container"><a href="composition-ii.html"><img src="composition-ii.jpg"><div class="overlay">Composition II in Red, Blue, and Yellow</div></a></div>
+    <div class="image-container"><a href="woman-with-hat.html"><img src="woman-with-hat.jpg"><div class="overlay">Woman with a Hat</div></a></div>
+    <div class="image-container"><a href="guernica.html"><img src="guernica.jpg"><div class="overlay">Guernica</div></a></div>
+    <div class="image-container"><a href="water-lilies.html"><img src="water-lilies.jpg"><div class="overlay">Water Lilies</div></a></div>
+  </div>
+
+  <h2>Postwar to Contemporary</h2>
+  <p>1945–Present | Artists challenged tradition, explored abstraction, pop, and immersive art, with hidden mathematical rhythms woven into their work.</p>
+  <div class="grid">
+    <!-- image items here -->
+    <div class="image-container"><a href="campbells-soup.html"><img src="campbells-soup.jpg"><div class="overlay">Campbell’s Soup Cans</div></a></div>
+    <div class="image-container"><a href="marilyn-diptych.html"><img src="marilyn-diptych.jpg"><div class="overlay">Marilyn Diptych</div></a></div>
+    <div class="image-container"><a href="homage-to-square.html"><img src="homage-to-square.jpg"><div class="overlay">Homage to the Square</div></a></div>
+    <div class="image-container"><a href="no5-1948.html"><img src="no5-1948.jpg"><div class="overlay">No. 5, 1948</div></a></div>
+    <div class="image-container"><a href="blue-nude.html"><img src="blue-nude.jpg"><div class="overlay">Blue Nude II</div></a></div>
+    <div class="image-container"><a href="untitled-1982.html"><img src="untitled-1982.jpg"><div class="overlay">Untitled (1982)</div></a></div>
+    <div class="image-container"><a href="balloon-dog.html"><img src="balloon-dog.jpg"><div class="overlay">Balloon Dog</div></a></div>
+    <div class="image-container"><a href="infinity-mirror-rooms.html"><img src="infinity-mirror-rooms.jpg"><div class="overlay">Infinity Mirror Rooms</div></a></div>
+  </div>
+</div>
+</body>
+</html>
