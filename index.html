@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Ratio Exhibition</title>
+  <style>
+    @font-face {
+      font-family: 'Golden Ratio';
+      src: url('GoldenRatio-Demo.ttf') format('truetype');
+    }
+    body {
+      margin: 0;
+      font-family: 'Golden Ratio', serif;
+      color: white;
+      overflow: hidden;
+    }
+    #bg-video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .title {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+      font-size: 80px;
+      mix-blend-mode: exclusion;
+      letter-spacing: 2px;
+    }
+    .nav-links {
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+      text-align: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      margin: 0 20px;
+      mix-blend-mode: exclusion;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="BACKGROUND.mp4" type="video/mp4">
+  </video>
+
+  <div class="title">GOLDEN RATIO</div>
+
+  <div class="nav-links">
+    <a href="time-periods.html">Time Periods</a>
+    <a href="about.html">About the Curator</a>
+  </div>
+</body>
+</html>
